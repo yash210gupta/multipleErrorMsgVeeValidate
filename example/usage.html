@@ -1,0 +1,29 @@
+<div class="container" id="inst">
+	<div class="card container" style="margin-top:20vh;max-width:35vw">
+		<div class="form-group">
+			<label class='row-txt'>Percentage</label>
+			<input class="form-control" type="text" name="Percentage" id="Percentage" @input="$emit('input' , $event.target.value)"
+				placeholder="Percentage" data-vv-as="Percentage"  v-validate="percentageValidation" class="txt textbox">
+			<span class="errorMessage text-danger" v-if="errors.has('Percentage')">{{errors.first('Percentage')}}</span>
+			</div>
+	</div>
+</div>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- VueJS minified file -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
+
+<!-- including VeeValidate library file-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vee-validate/2.1.4/vee-validate.min.js"></script>
+
+<script src="../src/custom-validation-example.js"></script>
+<script src="usage.js"></script>
