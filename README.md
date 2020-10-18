@@ -5,7 +5,10 @@ Solution for returning multiple type of error messages from single validation in
 Method:
 
 //validation for percentage
-VeeValidate.Validator.extend('percentage', {
+
+
+
+	VeeValidate.Validator.extend('percentage', {
 	getMessage: (field,params,data) => {
 		if(data.message)
 		{
@@ -13,7 +16,6 @@ VeeValidate.Validator.extend('percentage', {
 		}
 	},
 	validate: value => {
-		
 		if(Number(value)>=0 && Number(value)<=100)
 		{
 			if(value.indexOf('.')!=-1)
@@ -39,4 +41,4 @@ VeeValidate.Validator.extend('percentage', {
 			return {data: { message: `Percentage should strictly be a number equal to or between 0 and 100` } };
 		}  
 	}
-  });
+  	});
