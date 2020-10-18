@@ -1,4 +1,4 @@
-# Multiple Error Message From single Validation VeeValidate in VueJS
+# Multiple Error Messages From single Validation VeeValidate in VueJS
 Solution for returning multiple type of error messages from single validation in VeeValidate Validations in VueJS
 
 
