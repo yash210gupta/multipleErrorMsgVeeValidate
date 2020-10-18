@@ -7,7 +7,9 @@ Method:
 //validation for percentage
 
 
-
+	Vue.use(VeeValidate);
+	
+	
 	VeeValidate.Validator.extend('percentage', {
 	getMessage: (field,params,data) => {
 		if(data.message)
